@@ -1,0 +1,15 @@
+{% extends 'accounts/main.html' %}
+
+{% block content %}
+
+
+<div style=" margin-top: 50px; display: flex; justify-content: space-evenly;"> 
+  <button type="button" class="btn btn-secondary btn-square-xl" onclick="location.href='http://127.0.0.1:8000/yeniBolumForm/'">Top-N Yeni Bölüm Önerileri</button> 
+  <button type="button" class="btn btn-secondary btn-square-xl" onclick="location.href='http://127.0.0.1:8000/istatistikForm/'">Yeni bir Bölüm için Yerleştirme İstatistikleri</button> 
+  <button type="button" class="btn btn-secondary btn-square-xl" onclick="location.href='http://127.0.0.1:8000/yerlestirmeForm/'">Bölümlerin Gelecek Yıl Yerleştirme Tahminleri</button> 
+</div> 
+<div style=" margin-top: 100px; display: flex; justify-content: space-evenly;"> 
+  <button type="button" class="btn btn-secondary btn-square-xl" onclick="location.href='http://127.0.0.1:8000/dolulukOraniForm/'">Bölüm Doluluk Oranı Tahmini</button> 
+  <button type="button" class="btn btn-secondary btn-square-xl" onclick="location.href='http://127.0.0.1:8000/kontenjanForm/'">En İyi Kontenjan Önerisi</button> 
+</div>
+{% endblock %}
